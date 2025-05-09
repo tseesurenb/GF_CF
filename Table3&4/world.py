@@ -17,7 +17,7 @@ os.environ['KMP_DUPLICATE_LIB_OK'] = 'True'
 args = parse_args()
 
 # /Users/tseesuren/Desktop/ActiveResearch/sota_models
-ROOT_PATH = "/Users/tseesuren/Desktop/ActiveResearch/sota_models/LightGCN-Pytorch"
+ROOT_PATH = "/home/madmin/LightGCN-PyTorch"
 CODE_PATH = join(ROOT_PATH, 'code')
 DATA_PATH = join(ROOT_PATH, 'data')
 BOARD_PATH = join(CODE_PATH, 'runs')
