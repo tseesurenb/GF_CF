@@ -261,7 +261,7 @@ class LGCN_IDE(object):
         else:
             return U_1
         
-class GF_CF(object):
+class GF_CF_orig(object):
     def __init__(self, adj_mat):
         self.adj_mat = adj_mat
         
@@ -393,7 +393,7 @@ class GF_CF_v2(object):
             print("\nNo cached files found.")
 
 
-class GF_CF_v1(object):
+class GF_CF(object):
     def __init__(self, adj_mat):
         self.adj_mat = adj_mat
         
