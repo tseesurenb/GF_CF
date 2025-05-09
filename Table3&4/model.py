@@ -402,7 +402,9 @@ class GF_CF_v1(object):
         start = time.time()
         
         print("Step 1: Computing item-item similarity matrix...")
-        item_vectors = np.array(adj_mat.T.todense())  # Transpose to get item vectors
+        #item_vectors = np.array(adj_mat.T.todense())  # Transpose to get item vectors
+        item_vectors = np.asarray(adj_mat.T.todense())
+
         print(f"Item vectors shape: {item_vectors.shape}")
         
         # Calculate cosine similarity between items
