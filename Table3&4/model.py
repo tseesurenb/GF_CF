@@ -299,7 +299,7 @@ class GF_CF_orig(object):
         return ret
 
 
-class GF_CF(object):
+class GF_CF_v2(object):
     def __init__(self, adj_mat, cache_dir='./model_cache'):
         self.adj_mat = adj_mat
         self.cache_dir = cache_dir
@@ -393,7 +393,7 @@ class GF_CF(object):
             print("\nNo cached files found.")
 
 
-class GF_CF_v1(object):
+class GF_CF(object):
     def __init__(self, adj_mat):
         self.adj_mat = adj_mat
         
@@ -402,8 +402,8 @@ class GF_CF_v1(object):
         start = time.time()
         
         print("Step 1: Computing item-item similarity matrix...")
-        #item_vectors = np.array(adj_mat.T.todense())  # Transpose to get item vectors
-        item_vectors = np.asarray(adj_mat.T.todense())
+        item_vectors = np.array(adj_mat.T.todense())  # Transpose to get item vectors
+        #item_vectors = np.asarray(adj_mat.T.todense())
 
         print(f"Item vectors shape: {item_vectors.shape}")
         
